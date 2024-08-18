@@ -30,6 +30,7 @@ body{
     --secondary-text-color: #BABABA;
     --category-color: #3495C0;
     --star-color: #FFEB3B;
+    
     --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
 }
 
@@ -142,13 +143,26 @@ Reusable code:
     max-width: 192rem;
     
 }
+
+.common-heading{
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 8rem;
+}
 .grid-two-column{
     grid-template-columns: repeat(2, 1fr);
+}
+.grid-three-column{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    -ms-grid-column-align: center;
 }
 
 .btn{
     background: var(--gradient);
-    /* padding: 1rem 2rem; */
+    padding: 1rem 2rem;
     border: none;
     display: inline-block;
     color: var(--text-color);
@@ -160,6 +174,42 @@ Reusable code:
     transition: all .3s ease;
 
 }
+.btn:hover, .btn:active{
+    box-shadow: 0 .5rem 1.5rem 0 var(--helper-color);
+}
+
+.card{
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.card:hover,.card:active{
+    cursor: default;
+
+
+}
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: var(--gradient);
+    border-radius: 1rem;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    padding: .1rem;
+    translate: -50% -50%;
+}
+
+.card::before{
+    filter: blur(.8rem);
+    opacity: 0.5;
+}
+
 
 /* ================================
 Hero section :start
@@ -263,14 +313,166 @@ Hero section :start
     
 }
 
-
-
-
 /* ================================
 Hero section :end
 ================================ */
+/* ================================
+most popular section 
+=============================== */
+.demand-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+}
+
+.common-heading p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 80rem;
+
+} 
+
+.btn-explore{
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    justify-content: flex-end;
+    position: relative;
+    right: -20rem;
+}
+
+/* =========course cards======== */
+
+.course-container{
+    width: 122.5rem;
+    height: auto;
+    margin-top: 5rem;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 0;
+}
 
 
+.image-section{
+    height: 20rem;
+    background-color: red;
+    border-radius: 1rem;
+}
+
+.course-card .image-1{
+    background-image: url('../assets/images/branding-course.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.course-card .image-2{
+    background-image: url('../assets/images/webdeveopment.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.course-card .image-3{
+    background-image: url('../assets/images/figma-crash-course.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.course-card-content{
+    padding-top: 1rem;
+
+}
+
+.category{
+    color: var(--category-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.course-tittle{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.course-discription{
+    color: var(--secondary-text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: .5rem 0;
+}
+.rating-details{
+    display: flex;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.rating{
+    font-size: 1.8rem;
+}
+.tutor-details{
+    display: flex;
+/* flex-direction: column; */
+    
+}
+
+.course-tutor-details{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: .5rem;
+    margin-left: 1rem;
+
+}
+
+.tutor-name{
+    color: var(--text-color);
+    font-size: 1.14rem;
+    font-weight: 700;
+}
+
+.tutor-specification{
+    color: var(--secondary-text-color);
+}
+
+.course-user-images{
+    padding-left: 1rem;
+
+}
+.course-user-images img{
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+    margin-left: -1.3rem;
+    
+}
+.btn-course{
+    position: absolute;
+    bottom: -.1rem;
+    left: 30rem;
+    border-radius: 1rem 0rem 1rem 0;
+    
+
+
+}
+
+
+
+/* .course-card{
+    background-color: var(--helper-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+} */
+
+/* .course-thumbnail{
+    width: 10rem;
+    height: auto;
+    display: grid;
+    position: relative;
+} */
 /* #home{
     width: 100%;
     min-height: 100vh;
