@@ -17,10 +17,10 @@
 
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a href="#" class="navbar-link home-link">home</a></li>
-                <li><a href="#" class="navbar-link home-link">about</a></li>
-                <li><a href="#" class="navbar-link home-link">courses</a></li>
-                <li><a href="#" class="navbar-link home-link">contact us</a></li>
+                <li><a href="#home" class="navbar-link home-link">home</a></li>
+                <li><a href="#about" class="navbar-link home-link">about</a></li>
+                <li><a href="#courses" class="navbar-link home-link">courses</a></li>
+                <li><a href="#contact us" class="navbar-link home-link">contact us</a></li>
                 <!-- <li><a href="#" class="navbar-link home-link">contact us</a></li> -->
             </ul>
         </nav>
@@ -33,7 +33,7 @@
 
     <!-- ============== Hero Section =============== -->
     <main>
-        <section class="section-hero section">
+        <section class="section-hero section" id="home">
             <div class="container grid grid-two-column">
                 <!-- ======== hero section left side ====== -->
                 <div class="section-hero-data">
@@ -71,7 +71,7 @@
         </section>
     </main>
  <!-- ============= Most Popular Courses Section ======== -->
-  <section class="section-hero mostpopular">
+  <section class="section-hero mostpopular" id="courses">
     <!-- ==========header===== -->
     <div class="container">
         <div class="demand-header">
@@ -83,7 +83,7 @@
                 Explore our most sought-after courses, carefully designed to equip you with the skills you need to succeed in today’s job market. Learn from industry experts and advance your career with hands-on, practical learning experiences.
             </p>
         </div>
-            <div class="btn btn-explore">Explore</div>
+            <a href="/pages/courses.html" class="btn btn-explore">Explore</a>
         </div>
     </div>
 <!-- ==============grid-card=============== -->
@@ -169,8 +169,8 @@
 </section>
  <!-- =========== About Us Section =========== -->
  <!-- <section class="section parent-abou-us"> -->
-<section class="about-us-section secction">
-    <div class="container grid grid-two-column">
+<section class="about-us-section secction" >
+    <div class="container grid grid-two-column"id="about">
         <!-- ======== about section left side ====== -->
          <div class="about-us-left">
         <div class="common-heading">
@@ -183,7 +183,7 @@
             
         </div>
         <div>
-            <a href="#" class="btn btn-discover-more">Discover&ensp;More</a>
+            <a href="/pages/about.html" class="btn btn-discover-more">Discover&ensp;More</a>
         </div>
     </div>
     <!-- ========================about section right side======================== -->
@@ -202,8 +202,8 @@
                 <img src="assets/images/user1.jpeg" class="instructor-profile-pic user1" alt="User 1">
                     <!-- <div class="course-card-content instructor-card-content"> -->
                         <div class="course-tutor-details">
-                            <h4 class="tutor-name">Jane Smith</h4>
-                        <h4 class="tutor-specification">Data Scientist</h4>
+                            <h4 class="instructor-name">Jane Smith</h4>
+                        <h4 class="instructor-specification">Data Scientist</h4>
                     </div>
             <!-- </div> -->
         </div>
@@ -212,8 +212,8 @@
             <img src="assets/images/user1.jpeg" class="instructor-profile-pic user1" alt="User 1">
                 <div class="course-card-content instructor-card-content">
                     <div class="course-tutor-details">
-                        <h4 class="tutor-name">Jane Smith</h4>
-                        <h4 class="tutor-specification">Data Scientist</h4>
+                        <h4 class="instructor-name">Jane Smith</h4>
+                        <h4 class="instructor-specification">Data Scientist</h4>
                     </div>
                 </div>
         </div>
@@ -222,14 +222,81 @@
             <img src="assets/images/user1.jpeg" class="instructor-profile-pic user1" alt="User 1">
             <div class="course-card-content instructor-card-content">
                 <div class="course-tutor-details">
-                    <h4 class="tutor-name">Jane Smith</h4>
-                    <h4 class="tutor-specification">Data Scientist</h4>
+                    <h4 class="instructor-name">Jane Smith</h4>
+                    <h4 class="instructor-specification">Data Scientist</h4>
                 </div>
             </div>
         </div>
 </section>
 <!-- Testimonials Section -->
-<section class="testimonials">
+<section class="testimonials-section section-hero">
+    <div class="container grid grid-two-column">
+        <!-- ======== testimonial section left side ====== -->
+        <div class="testimonials-content">
+            <div class="common-heading">
+                <h2>
+                Some of happy student!
+                </h2>
+                <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis iste placeat blanditiis, fugiat aut! Magnam, ipsa maxime! Accusantium quidem incidunt eaque quam harum dolorem consequuntur in officia, nostrum iusto rem voluptatem, quaerat perferendis amet placeat aut itaque iste sint quia commodi eligendi nam aperiam dignissimos! Natus commodi dolore ab delectus neque. Quod labore dolorum molestias provident impedit, consequatur doloribus.            
+                </p>
+            
+            </div>
+           <button class="btn">Discover More</button>
+        </div>
+        <!-- ===================== testimonial section right side ======================= -->
+        <div class="testimonial-grid-container">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="testimonial-slide">
+                   
+                        <div class="testimonial">
+                            <img src="assets/images/user1.jpeg" alt="testimonial-profile">
+                            <div class="testimonial-author">
+                                <h3>- John Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="stars">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                            </div>
+                            <p>"This platform is amazing! It has improved my productivity tenfold.This platform is amazing! It has improved my productivity tenfold.This platform is amazing! It has improved my productivity tenfold."</p>
+                        
+                        </div>
+
+                        <div class="testimonial">
+                            <img src="assets/images/user1.jpeg" alt="testimonial-profile">
+                            <div class="testimonial-author">
+                                <h3>- John Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="stars">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                            </div>
+                            <p>"This platform is amazing! It has improved my productivity tenfold."</p>
+                        
+                        </div>
+
+                        <div class="testimonial">
+                            <img src="assets/images/user1.jpeg" alt="testimonial-profile">
+                            <div class="testimonial-author">
+                                <h3>- John Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="stars">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                            </div>
+                            <p>"This platform is amazing! It has improved my productivity tenfold."</p>
+                        
+                        </div>
+
+                    </div>
+                </div>
+                <div class="controls">
+                    <span class="prev">&#10094;</span>
+                    <span class="next">&#10095;</span>
+                </div>
+            </div>
+        </div>
 
 </section>
 <!-- Footer Section -->
